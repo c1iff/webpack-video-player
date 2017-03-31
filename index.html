@@ -6,11 +6,39 @@
     <link rel="stylesheet" href="./dist/styles.css">
   </head>
   <body>
-    <div class="container">
-      <h1>Webpack Boilerplate</h1>
-      <button class="btn btn-primary">Bootstrap</button>
-      <i class="fa fa-camera-retro"></i> fa-camera-retro
+    <div class="video-section jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="wrapper">
+          <div class="d-flex justify-content-center">
+            <video id="my-video" class="video-js vjs-16-9" controls preload="auto"
+            poster="#" data-setup="{}">
+            <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+              <p class="vjs-no-js">This video is not support by your browser.</p>
+            </video>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="container">
+      <div class="video-details">
+        <small>
+          <p class="subtitle pad-r-med text-muted">tag name</p>
+          <p class="subtitle pad-r-med text-muted">03.30.17</p>
+          <p class="subtitle text-muted">3:00 PM</p>
+        </small>
+        <h3>This is a video title</h3>
+        <p>This is a description of the vido. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+      </div>
+    </div>
+    <div class="container color-picker">
+      <hr>
+      <p id="test-click">Change player colors</p>
+      <input id="picker" type="color" value="#ff0000" />
+      <button class="btn" id="changePlayerColor">Change Player Color</button>
+    </div>
+    <br><br>
+
     <script src="./dist/bundle.js" type="text/javascript"></script>
+
   </body>
 </html>
