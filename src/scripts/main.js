@@ -7,8 +7,9 @@ import videoStyle from '../styles/video.scss'
 $(document).ready(function() {
   $("#changePlayerColor").click(function(){
     var color = $('#picker').val()
-    color = "blue"
-    alert('change color', color)
-    $(".vjs-big-play-button:active").css("color", color);
+    $(".vjs-big-play-button").css("background-color", color);
+    $(".vjs-play-progress").css("background-color", color);
+    $(".vjs-volume-level").css("background-color", color);
+    console.log('change color', color);
   })
 })

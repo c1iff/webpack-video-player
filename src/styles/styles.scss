@@ -2,15 +2,16 @@
   background-color: black;
 }
 
-.subtitle {
-  text-transform: uppercase;
-  display: inline-block;
+@media (min-width: 1200px) {
+  #main-video {
+    width: 1140px;
+    max-width: 100%;
+  }
 }
 
-.pad-r-med {
-  padding-right: 10px;
-}
-
-.video-section {
-  margin-bottom: 2px;
+@media (min-width: 1200px) {
+  .video-section {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
