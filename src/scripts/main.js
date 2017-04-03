@@ -10,6 +10,5 @@ $(document).ready(function() {
     $(".vjs-big-play-button").css("background-color", color);
     $(".vjs-play-progress").css("background-color", color);
     $(".vjs-volume-level").css("background-color", color);
-    console.log('change color', color);
   })
 })
